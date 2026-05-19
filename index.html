@@ -341,10 +341,10 @@
       <div class="video-card">
 
         <blockquote
-        class="instagram-media"
-        data-instgrm-permalink="https://www.instagram.com/reel/DWU1vUukRta/"
-        data-instgrm-version="14">
-
+          class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DWU1vUukRta/"
+          data-instgrm-version="14"
+          style="width:100%; margin:auto;">
         </blockquote>
 
       </div>
@@ -354,10 +354,10 @@
       <div class="video-card">
 
         <blockquote
-        class="instagram-media"
-        data-instgrm-permalink="https://www.instagram.com/reel/DWhx0UpEXec/"
-        data-instgrm-version="14">
-
+          class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DWhx0UpEXec/"
+          data-instgrm-version="14"
+          style="width:100%; margin:auto;">
         </blockquote>
 
       </div>
@@ -367,10 +367,10 @@
       <div class="video-card">
 
         <blockquote
-        class="instagram-media"
-        data-instgrm-permalink="https://www.instagram.com/reel/DV_dxCrEcPJ/"
-        data-instgrm-version="14">
-
+          class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DV_dxCrEcPJ/?utm_source=ig_embed&amp;utm_campaign=loading"
+          data-instgrm-version="14"
+          style="width:100%; margin:auto;">
         </blockquote>
 
       </div>
@@ -380,12 +380,10 @@
       <div class="video-card">
 
         <blockquote
-        class="instagram-media"
-        data-instgrm-captioned
-        data-instgrm-permalink="https://www.instagram.com/reel/DXXIkBridt1/"
-        data-instgrm-version="14"
-        style="width:100%; min-width:100%;">
-
+          class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DXXIkBridt1/?utm_source=ig_embed&amp;utm_campaign=loading"
+          data-instgrm-version="14"
+          style="width:100%; margin:auto;">
         </blockquote>
 
       </div>
@@ -433,9 +431,17 @@
     © 2026 Luiza Falcão — UGC Portfolio
   </footer>
 
-  <!-- INSTAGRAM EMBED SCRIPT -->
+  <!-- INSTAGRAM EMBED -->
 
-  <script async src="//www.instagram.com/embed.js"></script>
+  <script async src="https://www.instagram.com/embed.js"></script>
+
+  <script>
+    window.onload = () => {
+      if (window.instgrm) {
+        window.instgrm.Embeds.process();
+      }
+    };
+  </script>
 
 </body>
 </html>
