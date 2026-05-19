@@ -73,6 +73,24 @@
       padding-top:140px;
     }
 
+    .hero-photo{
+      width:220px;
+      height:220px;
+      object-fit:cover;
+      border-radius:50%;
+      margin-bottom:30px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .contact-photo{
+      width:220px;
+      height:220px;
+      object-fit:cover;
+      border-radius:30px;
+      margin-bottom:30px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.12);
+    }
+
     .hero h1{
       font-size:4rem;
       margin-bottom:20px;
@@ -152,12 +170,6 @@
       transform:translateY(-6px);
     }
 
-    iframe{
-      width:100%;
-      border:none;
-      border-radius:20px;
-    }
-
     .contact{
       text-align:center;
     }
@@ -183,6 +195,12 @@
       text-align:center;
       padding:30px;
       color:#777;
+    }
+
+    iframe{
+      width:100%;
+      border:none;
+      border-radius:20px;
     }
 
     @media(max-width:900px){
@@ -225,6 +243,10 @@
   <!-- HERO -->
 
   <section class="hero">
+
+    <img 
+    src="https://i.imgur.com/8nV5QYw.jpeg"
+    class="hero-photo">
 
     <h1>
       UGC Creator &
@@ -291,49 +313,41 @@
       <!-- TIKTOK 1 -->
 
       <div class="video-card">
-
         <iframe
           src="https://www.tiktok.com/embed/v2/7631009589026114823"
           height="740"
           allowfullscreen>
         </iframe>
-
       </div>
 
       <!-- TIKTOK 2 -->
 
       <div class="video-card">
-
         <iframe
           src="https://www.tiktok.com/embed/v2/7626949268045352200"
           height="740"
           allowfullscreen>
         </iframe>
-
       </div>
 
       <!-- TIKTOK 3 -->
 
       <div class="video-card">
-
         <iframe
           src="https://www.tiktok.com/embed/v2/7625627206668045575"
           height="740"
           allowfullscreen>
         </iframe>
-
       </div>
 
       <!-- TIKTOK 4 -->
 
       <div class="video-card">
-
         <iframe
           src="https://www.tiktok.com/embed/v2/7622659855777664274"
           height="740"
           allowfullscreen>
         </iframe>
-
       </div>
 
       <!-- INSTAGRAM 1 -->
@@ -344,7 +358,6 @@
         class="instagram-media"
         data-instgrm-permalink="https://www.instagram.com/reel/DWU1vUukRta/"
         data-instgrm-version="14">
-
         </blockquote>
 
       </div>
@@ -357,7 +370,6 @@
         class="instagram-media"
         data-instgrm-permalink="https://www.instagram.com/reel/DWhx0UpEXec/"
         data-instgrm-version="14">
-
         </blockquote>
 
       </div>
@@ -366,23 +378,11 @@
 
       <div class="video-card">
 
-        <iframe
-          src="https://www.instagram.com/reel/DV_dxCrEcPJ/embed"
-          height="700"
-          allowfullscreen>
-        </iframe>
-
-      </div>
-
-      <!-- INSTAGRAM 4 -->
-
-      <div class="video-card">
-
-        <iframe
-          src="https://www.instagram.com/reel/DXXIkBridt1/embed"
-          height="700"
-          allowfullscreen>
-        </iframe>
+        <blockquote
+        class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/reel/DXXIkBridt1/"
+        data-instgrm-version="14">
+        </blockquote>
 
       </div>
 
@@ -393,6 +393,10 @@
   <!-- CONTACT -->
 
   <section class="contact" id="contact">
+
+    <img 
+    src="https://i.imgur.com/f3X8K0Y.jpeg"
+    class="contact-photo">
 
     <h2 class="section-title">Let's Work Together</h2>
 
@@ -428,8 +432,6 @@
   <footer>
     © 2026 Luiza Falcão — UGC Portfolio
   </footer>
-
-  <!-- EMBED SCRIPTS -->
 
   <script async src="//www.instagram.com/embed.js"></script>
 
