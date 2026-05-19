@@ -1,134 +1,425 @@
-<!-- ========================= -->
-<!-- SOCIAL EMBEDS SECTION -->
-<!-- ========================= -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luiza Falcão | UGC Portfolio</title>
 
-<section class="videos" id="videos">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <h2 class="section-title">Content Portfolio</h2>
+  <style>
 
-  <div class="video-grid">
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
 
-    <!-- TIKTOK 1 -->
-    <div class="video-card">
+    body{
+      background:#fff7fb;
+      color:#222;
+      overflow-x:hidden;
+    }
 
-      <blockquote class="tiktok-embed"
-      cite="https://www.tiktok.com/@luizaa_falcao/video/7631009589026114823"
-      data-video-id="7631009589026114823"
-      style="max-width: 605px; min-width: 325px;">
+    html{
+      scroll-behavior:smooth;
+    }
 
-      <section>
-        <a target="_blank"
-        title="@luizaa_falcao"
-        href="https://www.tiktok.com/@luizaa_falcao?refer=embed">
-        @luizaa_falcao
-        </a>
-      </section>
+    section{
+      padding:80px 8%;
+    }
 
-      </blockquote>
+    .section-title{
+      font-size:2.5rem;
+      margin-bottom:20px;
+      text-align:center;
+    }
+
+    nav{
+      position:fixed;
+      width:100%;
+      top:0;
+      left:0;
+      background:white;
+      padding:18px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:999;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav ul{
+      display:flex;
+      gap:24px;
+      list-style:none;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#222;
+      font-weight:500;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      text-align:center;
+      padding-top:140px;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      margin-bottom:20px;
+    }
+
+    .hero span{
+      color:#ff4fa3;
+    }
+
+    .hero p{
+      max-width:700px;
+      line-height:1.7;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#ff4fa3;
+      color:white;
+      text-decoration:none;
+      padding:14px 28px;
+      border-radius:40px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#ff238a;
+      transform:translateY(-3px);
+    }
+
+    .about{
+      background:white;
+      border-radius:40px;
+      margin:0 5%;
+      box-shadow:0 5px 30px rgba(0,0,0,0.05);
+    }
+
+    .cards{
+      margin-top:40px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:24px;
+    }
+
+    .card{
+      background:#fff0f7;
+      padding:30px;
+      border-radius:25px;
+    }
+
+    .card h3{
+      margin-bottom:12px;
+    }
+
+    .videos{
+      background:#fff0f7;
+    }
+
+    .video-grid{
+      margin-top:50px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:30px;
+      align-items:start;
+    }
+
+    .video-card{
+      background:white;
+      padding:20px;
+      border-radius:30px;
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .video-card:hover{
+      transform:translateY(-6px);
+    }
+
+    .contact{
+      text-align:center;
+    }
+
+    .socials{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+      margin-top:30px;
+    }
+
+    .socials a{
+      background:#ff4fa3;
+      color:white;
+      text-decoration:none;
+      padding:14px 24px;
+      border-radius:40px;
+      font-weight:600;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#777;
+    }
+
+    @media(max-width:900px){
+
+      .hero h1{
+        font-size:2.8rem;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:12px;
+      }
+
+      nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <h2>Luiza Falcão</h2>
+
+    <ul>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#videos">Portfolio</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <h1>
+      UGC Creator &
+      <span>Video Editor</span>
+    </h1>
+
+    <p>
+      Creating aesthetic, authentic and engaging content for lifestyle,
+      beauty, fitness and ballet brands.
+    </p>
+
+    <a href="#contact" class="btn">
+      Work With Me
+    </a>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <p style="text-align:center; max-width:800px; margin:auto; line-height:1.8;">
+      Hi! I'm Luiza, a Brazilian content creator passionate about creating
+      visually engaging and relatable content. I create lifestyle, beauty,
+      fitness and ballet videos with a fun, aesthetic and natural approach.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Lifestyle</h3>
+        <p>GRWM, routines and aesthetic daily content.</p>
+      </div>
+
+      <div class="card">
+        <h3>Beauty</h3>
+        <p>Clean girl aesthetic, skincare and makeup content.</p>
+      </div>
+
+      <div class="card">
+        <h3>Fitness & Ballet</h3>
+        <p>Movement-focused storytelling and balletcore visuals.</p>
+      </div>
+
+      <div class="card">
+        <h3>Editing</h3>
+        <p>TikTok/Reels editing with hooks and engaging pacing.</p>
+      </div>
 
     </div>
 
-    <!-- TIKTOK 2 -->
-    <div class="video-card">
+  </section>
 
-      <blockquote class="tiktok-embed"
-      cite="https://www.tiktok.com/@luizaa_falcao/video/7626949268045352200"
-      data-video-id="7626949268045352200"
-      style="max-width: 605px; min-width: 325px;">
+  <!-- CONTENT PORTFOLIO -->
 
-      <section>
-        <a target="_blank"
-        title="@luizaa_falcao"
-        href="https://www.tiktok.com/@luizaa_falcao?refer=embed">
-        @luizaa_falcao
-        </a>
-      </section>
+  <section class="videos" id="videos">
 
-      </blockquote>
+    <h2 class="section-title">Content Portfolio</h2>
+
+    <div class="video-grid">
+
+      <!-- TIKTOK 1 -->
+
+      <div class="video-card">
+
+        <blockquote class="tiktok-embed"
+        cite="https://www.tiktok.com/@luizaa_falcao/video/7631009589026114823"
+        data-video-id="7631009589026114823"
+        style="max-width: 605px;min-width: 325px;">
+
+        </blockquote>
+
+      </div>
+
+      <!-- TIKTOK 2 -->
+
+      <div class="video-card">
+
+        <blockquote class="tiktok-embed"
+        cite="https://www.tiktok.com/@luizaa_falcao/video/7626949268045352200"
+        data-video-id="7626949268045352200"
+        style="max-width: 605px;min-width: 325px;">
+
+        </blockquote>
+
+      </div>
+
+      <!-- TIKTOK 3 -->
+
+      <div class="video-card">
+
+        <blockquote class="tiktok-embed"
+        cite="https://www.tiktok.com/@luizaa_falcao/video/7625627206668045575"
+        data-video-id="7625627206668045575"
+        style="max-width: 605px;min-width: 325px;">
+
+        </blockquote>
+
+      </div>
+
+      <!-- TIKTOK 4 -->
+
+      <div class="video-card">
+
+        <blockquote class="tiktok-embed"
+        cite="https://www.tiktok.com/@luizaa_falcao/video/7622659855777664274"
+        data-video-id="7622659855777664274"
+        style="max-width: 605px;min-width: 325px;">
+
+        </blockquote>
+
+      </div>
+
+      <!-- INSTAGRAM 1 -->
+
+      <div class="video-card">
+
+        <blockquote
+        class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/reel/DWU1vUukRta/"
+        data-instgrm-version="14">
+
+        </blockquote>
+
+      </div>
+
+      <!-- INSTAGRAM 2 -->
+
+      <div class="video-card">
+
+        <blockquote
+        class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/reel/DWhx0UpEXec/"
+        data-instgrm-version="14">
+
+        </blockquote>
+
+      </div>
+
+      <!-- INSTAGRAM 3 -->
+
+      <div class="video-card">
+
+        <blockquote
+        class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/reel/DV_dxCrEcPJ/"
+        data-instgrm-version="14">
+
+        </blockquote>
+
+      </div>
 
     </div>
 
-    <!-- TIKTOK 3 -->
-    <div class="video-card">
+  </section>
 
-      <blockquote class="tiktok-embed"
-      cite="https://www.tiktok.com/@luizaa_falcao/video/7625627206668045575"
-      data-video-id="7625627206668045575"
-      style="max-width: 605px; min-width: 325px;">
+  <!-- CONTACT -->
 
-      <section>
-        <a target="_blank"
-        title="@luizaa_falcao"
-        href="https://www.tiktok.com/@luizaa_falcao?refer=embed">
-        @luizaa_falcao
-        </a>
-      </section>
+  <section class="contact" id="contact">
 
-      </blockquote>
+    <h2 class="section-title">Let's Work Together</h2>
 
-    </div>
+    <p>
+      Available for UGC videos, TikTok/Reels creation,
+      editing and brand collaborations.
+    </p>
 
-    <!-- TIKTOK 4 -->
-    <div class="video-card">
+    <br>
 
-      <blockquote class="tiktok-embed"
-      cite="https://www.tiktok.com/@luizaa_falcao/video/7622659855777664274"
-      data-video-id="7622659855777664274"
-      style="max-width: 605px; min-width: 325px;">
+    <p>
+      luizafalcao.balletdancer@gmail.com
+      <br>
+      +55 21 99759-3258
+    </p>
 
-      <section>
-        <a target="_blank"
-        title="@luizaa_falcao"
-        href="https://www.tiktok.com/@luizaa_falcao?refer=embed">
-        @luizaa_falcao
-        </a>
-      </section>
+    <div class="socials">
 
-      </blockquote>
+      <a href="https://www.instagram.com/lu_ffalcao"
+      target="_blank">
+      Instagram
+      </a>
+
+      <a href="https://www.tiktok.com/@luizaa_falcao"
+      target="_blank">
+      TikTok
+      </a>
 
     </div>
 
-    <!-- INSTAGRAM 1 -->
-    <div class="video-card">
+  </section>
 
-      <blockquote
-      class="instagram-media"
-      data-instgrm-permalink="https://www.instagram.com/reel/DWU1vUukRta/"
-      data-instgrm-version="14">
+  <footer>
+    © 2026 Luiza Falcão — UGC Portfolio
+  </footer>
 
-      </blockquote>
+  <!-- EMBED SCRIPTS -->
 
-    </div>
+  <script async src="https://www.tiktok.com/embed.js"></script>
+  <script async src="//www.instagram.com/embed.js"></script>
 
-    <!-- INSTAGRAM 2 -->
-    <div class="video-card">
-
-      <blockquote
-      class="instagram-media"
-      data-instgrm-permalink="https://www.instagram.com/reel/DWhx0UpEXec/"
-      data-instgrm-version="14">
-
-      </blockquote>
-
-    </div>
-
-    <!-- INSTAGRAM 3 -->
-    <div class="video-card">
-
-      <blockquote
-      class="instagram-media"
-      data-instgrm-permalink="https://www.instagram.com/reel/DV_dxCrEcPJ/"
-      data-instgrm-version="14">
-
-      </blockquote>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- EMBED SCRIPTS -->
-
-<script async src="https://www.tiktok.com/embed.js"></script>
-<script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>
